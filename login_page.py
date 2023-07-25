@@ -1,7 +1,9 @@
+#importing tkinter and pillow library
 from tkinter import *
 from PIL import ImageTk,Image
 from tkinter import messagebox
 
+#For login detail
 def handle_login():
     email = email_input.get()
     password = password_input.get()
@@ -20,6 +22,7 @@ root.iconbitmap('favicon.ico')
 root.geometry('350x500')
 
 root.configure(background='#0096DC')
+# Open various images which present in the file system
 img = Image.open('wallpapers/img1.jpg')
 resized_img = img.resize((70,70))
 img = ImageTk.PhotoImage(resized_img)
